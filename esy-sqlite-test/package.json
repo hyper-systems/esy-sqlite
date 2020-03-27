@@ -1,5 +1,5 @@
 {
-   "esy": {
+  "esy": {
     "build": [
       ["make", "TARGET_DIR=#{self.target_dir}"]
     ]
