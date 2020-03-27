@@ -1,5 +1,14 @@
 {
+   "esy": {
+    "build": [
+      ["make"]
+    ],
+    "buildsInSource": "_build"
+  },
+  "scripts": {
+    "test": "make test"
+  },
   "dependencies": {
-    "esy-sqlite": "hyperag/esy-sqlite:package.json#4b2614b"
+    "esy-sqlite": "hyperag/esy-sqlite:package.json#b353f2b"
   }
 }
