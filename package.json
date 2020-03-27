@@ -6,7 +6,7 @@
   "source": "https://www.sqlite.org/2020/sqlite-autoconf-3310100.tar.gz#0c30f5b22152a8166aa3bebb0f4bc1f3e9cc508b",
   "override": {
     "build": [
-      ["./configure", "--prefix=$cur__install"],
+      ["./configure", "--prefix=#{self.install}"],
       ["make", "-j4"]
     ],
     "install": [
@@ -16,18 +16,6 @@
     "exportedEnv": {
       "LD_LIBRARY_PATH": {
         "val": "#{self.lib : $LD_LIBRARY_PATH}",
-        "scope": "global"
-      },
-      "SQLITE_LIB_PATH": {
-        "val": "#{self.lib}",
-        "scope": "global"
-      },
-      "SQLITE_INCLUDE_PATH": {
-        "val": "#{self.install / 'include'}",
-        "scope": "global"
-      },
-      "SQLITE_BIN_PATH": {
-        "val": "#{self.bin}",
         "scope": "global"
       },
       "PKG_CONFIG_PATH": {
