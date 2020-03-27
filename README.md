@@ -13,3 +13,5 @@ Add an entry to the "dependencies" section in your project's `package.json`:
 }
 ```
 
+See the included [test package](https://github.com/hyperag/esy-sqlite/tree/master/esy-sqlite-test) for usage example.
+
