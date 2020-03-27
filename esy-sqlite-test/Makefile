@@ -1,4 +1,8 @@
 
+ifndef TARGET_DIR
+$(error TARGET_DIR is undefined. Define it with `make TARGET_DIR=_build`)
+endif
+
 
 $(TARGET_DIR)/test.exe: test.c
 	gcc $^ -o $@ -lsqlite3 \
