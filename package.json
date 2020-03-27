@@ -6,11 +6,11 @@
   "source": "https://www.sqlite.org/2020/sqlite-autoconf-3310100.tar.gz#0c30f5b22152a8166aa3bebb0f4bc1f3e9cc508b",
   "override": {
     "build": [
-      ["./sqlite-autoconf-3310100/configure --prefix=$cur__install"],
-      ["make", "-C", "sqlite-autoconf-3310100", "-j4"]
+      ["./configure", "--prefix=$cur__install"],
+      ["make", "-j4"]
     ],
     "install": [
-      ["make", "-C", "sqlite-autoconf-3310100", "install"]
+      ["make", "install"]
     ],
     "buildsInSource": true,
     "exportedEnv": {
